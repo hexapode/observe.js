@@ -37,21 +37,23 @@ You can then ninteract with your object
   	testObject.age++;
 
 Will log in console :
-    set : age to 22
+
+        set : age to 22
 
 If you add new key to your object they will get observed next time your object is used :
   
-      testObject.locationString = testObject.location + '.' + testObject.country + '.'+testObject.city;
-      testObject.location;
-      console.log('I am in : ' + testObject.locationString);
+        testObject.locationString = testObject.location + '.' + testObject.country + '.'+testObject.city;
+        testObject.location;
+        console.log('I am in : ' + testObject.locationString);
 
 Will log in console :
-      get : location(airport)
-      get : country(bielorussia)
-      get : city(minsk)
-      get : location(airport)
-      get : locationString(airport.bielorussia.minsk)
-      I am in : airport.bielorussia.minsk
+      
+        get : location(airport)
+        get : country(bielorussia)
+        get : city(minsk)
+        get : location(airport)
+        get : locationString(airport.bielorussia.minsk)
+        I am in : airport.bielorussia.minsk
 
 This library by itself is useless, but can become usefull if you try to build an ORM or this kind of stuff.
 
